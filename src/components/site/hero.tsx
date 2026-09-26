@@ -42,7 +42,7 @@ export function Hero() {
           </div>
         </div>
 
-        <aside className="rounded-[1.5rem] border border-border bg-card p-6 md:p-7">
+        <aside className="rounded-3xl border border-border bg-card p-6 md:p-7">
           <Eyebrow>Ближайший цикл</Eyebrow>
           <ul className="mt-5">
             {upcoming.map((item) => (

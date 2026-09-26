@@ -38,7 +38,7 @@ export function PhotoSlot({
   return (
     <div
       className={cn(
-        'relative flex items-end overflow-hidden rounded-[1.5rem] border border-border bg-[linear-gradient(160deg,#ebe4d8_0%,#d9cdbb_55%,#c4ad8e_100%)]',
+        'relative flex items-end overflow-hidden rounded-3xl border border-border bg-[linear-gradient(160deg,#ebe4d8_0%,#d9cdbb_55%,#c4ad8e_100%)]',
         className,
       )}
       role="img"
