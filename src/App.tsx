@@ -40,8 +40,8 @@ function App() {
       <main>
         <Hero />
         <Formats />
-        <Relationships />
         <Personal />
+        <Relationships />
         <Retreat />
         <Private />
         <About />

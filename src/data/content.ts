@@ -132,7 +132,7 @@ export const nav = [
 // ─── WhatsApp-заявки ─────────────────────────────────────────────────────────
 // Номер в международном формате, только цифры, без «+» и пробелов.
 // TODO: заменить на реальный номер команды.
-export const WHATSAPP_PHONE = '70000000000'
+export const WHATSAPP_PHONE = '77013644235'
 
 /** Готовое сообщение для каждого формата — человек видит его в WhatsApp и просто жмёт «Отправить». */
 export const whatsappMessages: Record<FormatId | 'general', string> = {
