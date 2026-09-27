@@ -15,7 +15,7 @@ export function FinalCta() {
         <p className="mt-8 text-lg text-muted-foreground">
           Оставьте заявку. Команда поможет выбрать формат.
         </p>
-        <WhatsAppButton size="lg" className="mt-8 h-12 rounded-full px-8">
+        <WhatsAppButton place="final-cta" size="lg" className="mt-8 h-12 rounded-full px-8">
           Оставить заявку
         </WhatsAppButton>
       </Container>
@@ -41,6 +41,8 @@ export function Footer() {
           </a>
           <a
             href={whatsappLink()}
+            data-umami-event="whatsapp-general"
+            data-umami-event-place="footer"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground"

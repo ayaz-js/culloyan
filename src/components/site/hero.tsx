@@ -25,7 +25,7 @@ export function Hero() {
             персонального сопровождения в течение года.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
-            <WhatsAppButton size="lg" className="h-12 rounded-full px-7">
+            <WhatsAppButton place="hero" size="lg" className="h-12 rounded-full px-7">
               Выбрать формат
             </WhatsAppButton>
             <Button

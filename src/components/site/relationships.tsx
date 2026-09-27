@@ -24,6 +24,7 @@ export function Relationships() {
               <Pill className="border-graphite-border">Закрытая группа</Pill>
             </div>
             <WhatsAppButton
+              place="relationships"
               size="lg"
               className="mt-10 h-12 self-start rounded-full bg-graphite-foreground px-7 text-graphite hover:bg-graphite-foreground/90"
               format="relationships"

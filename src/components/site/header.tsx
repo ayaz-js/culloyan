@@ -29,7 +29,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <WhatsAppButton className="hidden rounded-full px-5 sm:inline-flex">
+          <WhatsAppButton place="header" className="hidden rounded-full px-5 sm:inline-flex">
             Оставить заявку
           </WhatsAppButton>
           <Button
@@ -59,6 +59,7 @@ export function Header() {
               </a>
             ))}
             <WhatsAppButton
+              place="mobile-menu"
               className="mt-3 rounded-full sm:hidden"
               size="lg"
               onClick={() => setOpen(false)}

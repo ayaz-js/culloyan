@@ -21,6 +21,7 @@ export function Retreat() {
               ))}
             </div>
             <WhatsAppButton
+              place="retreat"
               size="lg"
               className="mt-10 h-12 self-start rounded-full px-7"
               format="retreat"

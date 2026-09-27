@@ -42,6 +42,7 @@ export function Private() {
               ))}
             </ul>
             <WhatsAppButton
+              place="private"
               size="lg"
               className="mt-4 h-12 w-full rounded-full bg-graphite-foreground text-graphite hover:bg-graphite-foreground/90"
               format="private"

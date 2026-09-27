@@ -29,7 +29,12 @@ export function Personal() {
             ))}
           </ol>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <WhatsAppButton size="lg" className="h-12 rounded-full px-7" format="personal">
+            <WhatsAppButton
+              place="personal"
+              size="lg"
+              className="h-12 rounded-full px-7"
+              format="personal"
+            >
               Записаться
             </WhatsAppButton>
             <Pill>По предварительной записи</Pill>
