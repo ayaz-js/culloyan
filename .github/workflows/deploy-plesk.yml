@@ -29,8 +29,11 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # ftp или ftps (ftps — если на хостинге есть валидный SSL для FTP)
-          protocol: ftp
+          # FTPS: шифрованное соединение (Plesk часто сбрасывает обычный FTP-канал данных)
+          protocol: ftps
+          # loose — принимать и самоподписанный сертификат FTP-сервера
+          security: loose
+          timeout: 120000
           local-dir: ./dist/
           # Корень сайта в Plesk (путь относительно домашней папки FTP-пользователя)
           server-dir: ./httpdocs/
