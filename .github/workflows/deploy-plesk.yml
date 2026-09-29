@@ -1,0 +1,36 @@
+name: Deploy to Plesk
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: plesk
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Upload dist to Plesk via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server:  ftp.culloyan.com
+          username: culloyan
+          password: PrNyhq8XRp2qpcU
+          # ftp или ftps (ftps — если на хостинге есть валидный SSL для FTP)
+          protocol: ftp
+          local-dir: ./dist/
+          # Корень сайта в Plesk (путь относительно домашней папки FTP-пользователя)
+          server-dir: ./httpdocs/
