@@ -26,7 +26,7 @@ jobs:
       - name: Upload dist to Plesk via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server:  ftp.culloyan.com
+          server:  culloyan.com
           username: culloyan
           password: PrNyhq8XRp2qpcU
           # ftp или ftps (ftps — если на хостинге есть валидный SSL для FTP)
