@@ -32,11 +32,11 @@ export function Footer() {
           <span className="ml-3">Pavel Culloyan · 2026</span>
         </p>
         <nav className="flex gap-6" aria-label="Контакты">
-          {/* TODO: подставить реальные ссылки на Telegram и Instagram */}
-          <a href="#" className="hover:text-foreground">
-            Telegram
+          {/* contacts */}
+          <a href="https://www.tiktok.com/@pavel_kuloyan" className="hover:text-foreground">
+            TikTok
           </a>
-          <a href="#" className="hover:text-foreground">
+          <a href="https://www.instagram.com/pavel_kulloyan" className="hover:text-foreground">
             Instagram
           </a>
           <a

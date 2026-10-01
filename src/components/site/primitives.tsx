@@ -44,7 +44,7 @@ export function PhotoSlot({
       role="img"
       aria-label={label}
     >
-      <span className="eyebrow m-5 rounded-full bg-background/70 px-3 py-1.5 text-foreground/70 backdrop-blur">
+      <span className="eyebrow m-5 rounded-full bg-background/70 px-3 py-1.5 text-foreground/70 backdrop-blur z-10">
         {label}
       </span>
       {children}

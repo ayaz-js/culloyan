@@ -4,7 +4,13 @@ export function About() {
   return (
     <Section id="about" className="hairline">
       <Container className="grid items-center gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
-        <PhotoSlot label="Портрет или видео Павла" className="aspect-4/5" />
+        <PhotoSlot label="Портрет Павла" className="aspect-4/5">
+          <img
+            src="/images/kulloyan.jpeg"
+            alt="Pavel Kulloyan"
+            className="absolute object-cover w-full h-full"
+          />
+        </PhotoSlot>
         <div>
           <Eyebrow>Павел Кулоян</Eyebrow>
           <h2 className="mt-4 font-serif text-5xl leading-[1.02] md:text-6xl">
