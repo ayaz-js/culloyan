@@ -5,23 +5,16 @@ import { Container, Eyebrow, PhotoSlot, Section } from './primitives'
 
 type Story = {
   title: string
-  /** Прямая ссылка на файл (mp4/webm), например '/videos/case-01.mp4'. */
-  src?: string
-  /** Ссылка для встраивания (YouTube, VK Видео, Rutube) — используется, если нет src. */
   embedUrl?: string
-  /** Обложка карточки и видео. */
   poster?: string
 }
 
-// TODO: добавить ссылки на видео и обложки
 const cases: Story[] = [
   {
-    title: 'Видео-кейс 01',
+    title: 'Точка отношений в Алании',
     poster: 'https://i.ytimg.com/vi/k2kqzv5U7uQ/maxresdefault.jpg?v=6acab7a1',
     embedUrl: 'https://www.youtube.com/embed/k2kqzv5U7uQ?si=ise39fUcQbaF29SN',
   },
-  { title: 'Видео-кейс 02' },
-  { title: 'Видео-кейс 03' },
 ]
 
 export function Stories() {
@@ -72,16 +65,7 @@ export function Stories() {
             {story.title}
           </DialogTitle>
           <div className="aspect-video max-h-[80svh] w-full bg-black">
-            {story.src ? (
-              <video
-                src={story.src}
-                poster={story.poster}
-                controls
-                autoPlay
-                playsInline
-                className="size-full object-contain"
-              />
-            ) : story.embedUrl ? (
+            {story.embedUrl ? (
               <iframe
                 src={story.embedUrl}
                 title={story.title}

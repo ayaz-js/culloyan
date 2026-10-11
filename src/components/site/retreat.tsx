@@ -30,7 +30,7 @@ export function Retreat() {
             </WhatsAppButton>
           </div>
           <div className="grid grid-rows-[1.4fr_1fr] gap-4">
-            <PhotoSlot label="Море · Алания" className="min-h-72">
+            <PhotoSlot className="min-h-72">
               <img
                 src="/images/retreat-sea.jpg"
                 alt="Побережье Алании и пляж Клеопатры"
@@ -39,7 +39,7 @@ export function Retreat() {
               />
             </PhotoSlot>
             <div className="grid grid-cols-2 gap-4">
-              <PhotoSlot label="Пространство" className="min-h-44">
+              <PhotoSlot className="min-h-44">
                 <img
                   src="/images/retreat-space.jpg"
                   alt="Медитация на берегу моря"
@@ -47,7 +47,7 @@ export function Retreat() {
                   className="absolute object-cover w-full h-full"
                 />
               </PhotoSlot>
-              <PhotoSlot label="Руки · еда" className="min-h-44">
+              <PhotoSlot className="min-h-44">
                 <img
                   src="/images/retreat-food.jpg"
                   alt="Завтрак с фруктами на общем столе"
