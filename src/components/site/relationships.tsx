@@ -14,6 +14,9 @@ export function Relationships() {
               <br />
               Отношения
             </h2>
+            <p className="mt-4 font-serif text-2xl text-graphite-muted md:text-3xl">
+              Авторская программа
+            </p>
             <p className="mt-6 font-serif text-4xl text-bronze">$2,000</p>
             <p className="mt-6 max-w-sm leading-relaxed text-[#bcb7ae]">
               Пять дней, чтобы увидеть собственные сценарии отношений и собрать личную карту того,
