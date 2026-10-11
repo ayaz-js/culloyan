@@ -8,13 +8,13 @@ export function Relationships() {
       <Container>
         <div className="grid gap-12 rounded-4xl bg-graphite p-8 text-graphite-foreground md:p-14 lg:grid-cols-[0.75fr_1.25fr]">
           <div className="flex flex-col">
-            <Eyebrow className="text-graphite-muted">Основной продукт · 28.10 – 01.11</Eyebrow>
+            <Eyebrow className="text-graphite-muted">Основной продукт · 14.11</Eyebrow>
             <h2 className="mt-5 font-serif text-5xl leading-[0.95] md:text-6xl">
               ТОЧКА:
               <br />
               Отношения
             </h2>
-            <p className="mt-6 font-serif text-4xl text-bronze">$1,500</p>
+            <p className="mt-6 font-serif text-4xl text-bronze">$2,000</p>
             <p className="mt-6 max-w-sm leading-relaxed text-[#bcb7ae]">
               Пять дней, чтобы увидеть собственные сценарии отношений и собрать личную карту того,
               что вы выбираете теперь.
