@@ -37,7 +37,7 @@ export function Retreat() {
           <div className="grid grid-rows-[1.4fr_1fr] gap-4">
             <PhotoSlot className="min-h-72">
               <img
-                src="/images/retreat-sea.jpg"
+                src="/images/retreat-sea.png"
                 alt="Побережье Алании и пляж Клеопатры"
                 loading="lazy"
                 className="absolute object-cover w-full h-full"
