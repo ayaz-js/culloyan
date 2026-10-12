@@ -46,7 +46,7 @@ export function Retreat() {
             <div className="grid grid-cols-2 gap-4">
               <PhotoSlot className="min-h-44">
                 <img
-                  src="/images/retreat-space.jpg"
+                  src="/images/retreat-space.png"
                   alt="Медитация на берегу моря"
                   loading="lazy"
                   className="absolute object-cover w-full h-full"
@@ -54,7 +54,7 @@ export function Retreat() {
               </PhotoSlot>
               <PhotoSlot className="min-h-44">
                 <img
-                  src="/images/retreat-food.jpg"
+                  src="/images/retreat-food.png"
                   alt="Завтрак с фруктами на общем столе"
                   loading="lazy"
                   className="absolute object-cover w-full h-full"
