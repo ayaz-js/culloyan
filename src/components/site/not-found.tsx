@@ -1,10 +1,4 @@
-import { useEffect } from 'react'
-
 export function NotFound() {
-  useEffect(() => {
-    document.title = 'Ошибка 504'
-  }, [])
-
   return (
     <main
       className="fixed inset-0 overflow-auto bg-white px-4 py-8 text-center text-black"
