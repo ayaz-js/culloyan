@@ -8,6 +8,7 @@ import { FinalCta, Footer } from '@/components/site/final-cta'
 import { Formats } from '@/components/site/formats'
 import { Header } from '@/components/site/header'
 import { Hero } from '@/components/site/hero'
+import { NotFound } from '@/components/site/not-found'
 import { Personal } from '@/components/site/personal'
 import { Private } from '@/components/site/private'
 import { Relationships } from '@/components/site/relationships'
@@ -19,7 +20,11 @@ import { Stories } from '@/components/site/stories'
 //   1) раскомментировать импорты и код ниже;
 //   2) в кнопках заменить <WhatsAppButton format="…"> на <Button onClick={() => openApply('…')}>.
 
+const SHOW_NOT_FOUND = true
+
 function App() {
+  if (SHOW_NOT_FOUND) return <NotFound />
+
   // const [open, setOpen] = useState(false)
   // const [format, setFormat] = useState<FormatId | null>(null)
   //
