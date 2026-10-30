@@ -1,17 +1,18 @@
-import { Container, Eyebrow } from './primitives'
+import { useEffect } from 'react'
 
 export function NotFound() {
+  useEffect(() => {
+    document.title = 'Ошибка 404'
+  }, [])
+
   return (
-    <main className="flex min-h-svh items-center py-20 text-center">
-      <Container>
-        <Eyebrow>Ошибка 404</Eyebrow>
-        <h1 className="mx-auto mt-5 max-w-4xl font-serif text-6xl leading-[1.02] md:text-8xl">
-          Страница <em className="text-bronze">не найдена</em>
-        </h1>
-        {/*<p className="mt-8 text-lg text-muted-foreground">*/}
-        {/*  Возможно, она была удалена или временно недоступна.*/}
-        {/*</p>*/}
-      </Container>
+    <main
+      className="fixed inset-0 overflow-auto bg-white px-4 py-8 text-center text-black"
+      style={{ fontFamily: 'Times New Roman, Times, serif' }}
+    >
+      <h1 className="text-[2em] font-bold">Ошибка 404</h1>
+      <hr className="my-2 border-t border-[#ccc]" />
+      <p>Страница не найдена</p>
     </main>
   )
 }
