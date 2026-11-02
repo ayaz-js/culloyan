@@ -20,7 +20,7 @@ import { Stories } from '@/components/site/stories'
 //   1) раскомментировать импорты и код ниже;
 //   2) в кнопках заменить <WhatsAppButton format="…"> на <Button onClick={() => openApply('…')}>.
 
-const SHOW_NOT_FOUND = true
+const SHOW_NOT_FOUND = false
 
 function App() {
   if (SHOW_NOT_FOUND) return <NotFound />
