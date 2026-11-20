@@ -8,7 +8,7 @@ export function Retreat() {
       <Container>
         <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="flex flex-col rounded-4xl border border-border bg-card p-8 md:p-12">
-            <Eyebrow>28 ноября · Alanya</Eyebrow>
+            <Eyebrow>14 декабря · Alanya</Eyebrow>
             <h2 className="mt-4 font-serif text-5xl leading-none md:text-7xl">
               Авторская методика
             </h2>

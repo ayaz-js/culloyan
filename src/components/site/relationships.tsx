@@ -8,7 +8,7 @@ export function Relationships() {
       <Container>
         <div className="grid gap-12 rounded-4xl bg-graphite p-8 text-graphite-foreground md:p-14 lg:grid-cols-[0.75fr_1.25fr]">
           <div className="flex flex-col">
-            <Eyebrow className="text-graphite-muted">Основной продукт · 14.11</Eyebrow>
+            <Eyebrow className="text-graphite-muted">Основной продукт · январь</Eyebrow>
             <h2 className="mt-5 font-serif text-5xl leading-[0.95] md:text-6xl">
               ТОЧКА:
               <br />
